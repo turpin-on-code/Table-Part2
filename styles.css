@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+table {
+    border: 3px solid #565656;
+    
+}
+
+caption {
+    font-size: 2rem;
+    margin: 1em 0;
+}
+
+table td, table th {
+    border: 1px solid #565656;
+    min-width: 120px;
+    max-height: 10px;
+}
+
+table th {
+    background-color: #116D6F;
+    color: #fff;
+    cursor: pointer;
+}
+
+table th:hover {
+    animation: scale-th 0.5s;
+}
+
+table th span {
+    display: none
+}
+
+@keyframes scale-th {
+    0% { transform: scale(1)}
+    50% { transform: scale(1.1);}
+    100% { transform: scale(1.0);}
+}
